@@ -44,6 +44,8 @@ def calculate(a, b, string_operator):
         return a ** b
     elif string_operator == 'div':
         return a // b if b else 'Division by zero!'
+    else:
+        return 'Unknown operator!'
 
 
 def main():
