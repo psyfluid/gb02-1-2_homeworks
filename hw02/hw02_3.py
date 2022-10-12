@@ -11,14 +11,16 @@ def count_occurences(str1, str2):
             if str1[i:len2+i] == str2:
                 count += 1
                 i += len2
-            i += 1
+            else:
+                i += 1
         return count, 0
     else:
         while i < len2 - len1 + 1:
             if str2[i:len1+i] == str1:
                 count += 1
                 i += len1
-            i += 1
+            else:
+                i += 1
         return count, 1
 
 
