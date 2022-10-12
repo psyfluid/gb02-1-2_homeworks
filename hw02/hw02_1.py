@@ -7,6 +7,10 @@
 # - 0,56 -> 11
 
 def sum_of_digits(num):
+
+    if num < 0:
+        num = -num
+
     factor = 1
     while num * factor - int(num * factor) > 0:
         factor *= 10
