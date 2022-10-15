@@ -8,7 +8,8 @@
 # - 2 -> 10
 
 def convert_to_binary(num):
-    return '-' if num < 0 else '' + convert_to_binary_rec(abs(num))
+    return '-' + convert_to_binary_rec(-num) if num < 0 \
+        else '' + convert_to_binary_rec(num)
 
 
 def convert_to_binary_rec(num):
