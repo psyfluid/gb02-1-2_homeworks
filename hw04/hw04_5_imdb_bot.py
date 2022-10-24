@@ -256,7 +256,7 @@ def main():
         try:
             load()
         except Exception:
-            print('Не удалось загрузить фильмотеку из файла ')
+            print(f'Не удалось загрузить фильмотеку из файла "{FILE_NAME}".')
         start_bot()
     else:
         stop_bot()
