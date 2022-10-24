@@ -169,10 +169,10 @@ def remove_film(f_title):
         else:
             print('Выберите фильм для удаления:')
             film_index = film_choice(search_result)
-            remove_film_by_key(list(search_result.keys())[film_index])
             if film_index == -1:
                 print('Фильм не выбран. Операция удаления фильма отменена.')
                 return
+            remove_film_by_key(list(search_result.keys())[film_index])
     elif search_result:
         remove_film_by_key(list(search_result.keys())[0])
     else:
